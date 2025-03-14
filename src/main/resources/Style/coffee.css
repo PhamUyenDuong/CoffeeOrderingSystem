@@ -1,0 +1,67 @@
+.borderPane {
+    /*-fx-background-color: linear-gradient(to bottom, lightblue, darkblue);*/
+    -fx-background-image: url("/Images/background.jpg");
+    /*-fx-background-color: blue;*/
+}
+
+.button{
+    -fx-background-color: violet;
+
+}
+
+#creamButton{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%; /* Ensures the button is circular */
+    -fx-min-width: 25; /* Minimum width for a circle */
+    -fx-min-height: 25; /* Minimum height for a circle */
+    -fx-max-width: 25; /* Fixes the size */
+    -fx-max-height: 25;
+}
+
+#sugarButton{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%; /* Ensures the button is circular */
+    -fx-min-width: 25; /* Minimum width for a circle */
+    -fx-min-height: 25; /* Minimum height for a circle */
+    -fx-max-width: 25; /* Fixes the size */
+    -fx-max-height: 25;
+}
+
+#chocolateButton{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%; /* Ensures the button is circular */
+    -fx-min-width: 25; /* Minimum width for a circle */
+    -fx-min-height: 25; /* Minimum height for a circle */
+    -fx-max-width: 25; /* Fixes the size */
+    -fx-max-height: 25;
+}
+
+#extraShotButton{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%; /* Ensures the button is circular */
+    -fx-min-width: 25; /* Minimum width for a circle */
+    -fx-min-height: 25; /* Minimum height for a circle */
+    -fx-max-width: 25; /* Fixes the size */
+    -fx-max-height: 25;
+}
+
+#goldButton{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%; /* Ensures the button is circular */
+    -fx-min-width: 25; /* Minimum width for a circle */
+    -fx-min-height: 25; /* Minimum height for a circle */
+    -fx-max-width: 25; /* Fixes the size */
+    -fx-max-height: 25;
+}
+
+.label{
+    -fx-font-style: bold;
+}
+
+#makeCoffeeLabel{
+    -fx-font-size: 20;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            style = "-fx-background-image: url('/Images/background1.jpg');"
+            fx:controller="MyController"
+            prefHeight="500.0" prefWidth="500.0">
+    <center>
+        <VBox spacing="10" alignment="CENTER" BorderPane.alignment="CENTER">
+            <HBox spacing="10" alignment="CENTER">
+                <VBox alignment="CENTER" spacing = "2">
+                    <Label fx:id="makeCoffeeLabel" text="Make your own coffee"/>
+
+                    <HBox spacing="10" alignment="CENTER">
+                        <Button fx:id="newOrderButton" onAction="#newCoffee" text="Create a new order"/>
+                        <Button fx:id="deleteOrderButton" onAction="#deleteCoffee" text="Delete order"/>
+                    </HBox>
+                    <HBox spacing="10" prefWidth="150">
+                        <Label text="Cream - $0.5"/>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="creamButton" text="+" onAction="#addOnCream"/>
+                    </HBox>
+                    <HBox spacing="10" prefWidth="150">
+                        <Label text="Sugar - $0.5"/>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="sugarButton" text="+" onAction="#addOnSugar"/>
+                    </HBox>
+                    <HBox spacing="10" prefWidth="150">
+                        <Label text="Chocolate - $1.0"/>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="chocolateButton" text="+" onAction="#addOnChocolate"/>
+                    </HBox>
+                    <HBox spacing="10" prefWidth="150">
+                        <Label text="Extra shot - $1.2"/>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="extraShotButton" text="+" onAction="#addOnExtraShot"/>
+                    </HBox>
+                    <HBox spacing="10" prefWidth="150">
+                        <Label text="Gold - $10.0"/>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="goldButton" text="+" onAction="#addOnGold"/>
+                    </HBox>
+                </VBox>
+
+                <TextArea fx:id="currentOrder" wrapText="true" prefWidth="200" editable="false"/>
+            </HBox>
+
+            <Button fx:id="" text="Check out" onAction="#checkOut"/>
+            <TextArea fx:id="checkOutItems" wrapText="true" prefWidth="350" editable="false" />
+        </VBox>
+    </center>
+</BorderPane>
